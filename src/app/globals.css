@@ -2,32 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.text-bellfaire {
+  font-family: var(--bellefair-font);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  font-size: 9.375rem;
+  line-height: 1;
+  color: #fff;
 }
+h2 {
+  font-size: 6.25rem;
+  font-family: var(--bellefair-font);
+  color: #fff;
 
+}
+h3 {
+  font-size: 3.5rem;
+  font-family: var(--bellefair-font);
+  line-height: 1;
+  color: #fff;
+
+}
+h4 {
+  font-size: 2rem;
+  font-family: var(--bellefair-font);
+  line-height: 1;
+  color: #fff;
+
+}
+h5 {
+  font-size: 1.75rem;
+  font-family: var(--barlow-font);
+  letter-spacing: 4.72px;
+}
+.sub-1 {
+  font-size: 1.75rem;
+  font-family: var(--bellefair-font);
+}
+.sub-2 {
+  font-size: 0.875rem;
+  font-family: var(--barlow-font);
+  letter-spacing: 2.35px;
+}
+.nav-text {
+  font-size: 1rem;
+  font-family: var(--barlow-font);
+  letter-spacing: 2.7px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.125rem;
+  font-family: var(--barlow-font);
+}
+p {
+  font-size: 15px;
+  font-family: var(--barlow-font);
+  line-height: 1.5;
+  color: #fff;
+
+}
+.transition {
+  transition-duration: 250ms;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 11px;
   }
 }
